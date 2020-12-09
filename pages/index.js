@@ -10,7 +10,7 @@ export default function Home() {
 
       <main>
         <h1 className="title">
-          Welcome to  Next-10
+          TechnoFreak
         </h1>
 
       </main>
