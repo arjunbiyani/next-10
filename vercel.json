@@ -1,8 +1,8 @@
 {
     "version": 2,
     "builds": [
-      { "src": "store-front/package.json", "use": "@now/next" },
-      { "src": "dashboard/package.json", "use": "@now/next" }
+      { "src": "store-front/package.json", "use": "@vercel/next" },
+      { "src": "dashboard/package.json", "use": "@vercel/next" }
     ],
     "routes": [
       { "src": "/dashboard/_next(.*)", "dest": "dashboard/_next$1" },
