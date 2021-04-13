@@ -1,11 +1,1 @@
-{
-    "version": 2,
-    "builds": [
-      { "src": "dashboard/package.json", "use": "@now/next" },
-      { "src": "store-front/package.json", "use": "@now/next" }
-    ],
-    "routes": [
-      { "src": "/dashboard/_next(.*)", "dest": "dashboard/_next$1" },
-      { "src": "/(.*)", "dest": "/storefront" }
-    ]
-  }
+{}
