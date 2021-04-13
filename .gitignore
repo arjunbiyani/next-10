@@ -1,4 +1,8 @@
 .DS_Store
+dashboard/node_modules/
+dashboard/.DS_Store
+store-front/node_modules/
+store-front/.DS_Store
 .next/
 node_modules/
 	
