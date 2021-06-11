@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -12,5 +13,10 @@
   "devDependencies": {
     "@types/react": "^17.0.11",
     "typescript": "^4.3.2"
+=======
+    "name": "next-10",
+    "version": "0.1.0",
+    "private": true
+>>>>>>> cc0e5dcedf96ae480f199cc36e586ed78b9fa03b
   }
-}
+  
