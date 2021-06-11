@@ -1,1 +1,0 @@
-This is StoreFront Micro Front EnThis is Dashboard Micro Front End
