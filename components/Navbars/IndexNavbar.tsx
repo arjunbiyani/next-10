@@ -4,7 +4,16 @@ import Link from "next/link";
 
 import IndexDropdown from "/components/Dropdowns/IndexDropdown.js";
 
-export default function Navbar(props) {
+interface Props{
+  user_name?: String | null;
+  course_count: number | 0;
+}
+
+
+const Navbar= ({
+  user_name,
+  course_count
+}) => {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
@@ -16,7 +25,7 @@ export default function Navbar(props) {
                 className="text-blueGray-700 text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
                 href="#pablo"
               >
-                Next 10 - Dash
+                Next 10 - Dash {user_name}
               </a>
             </Link>
             <button
@@ -33,3 +42,5 @@ export default function Navbar(props) {
     </>
   );
 }
+
+export default Navbar;
