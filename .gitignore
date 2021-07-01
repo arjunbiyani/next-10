@@ -5,4 +5,5 @@ store-front/node_modules/
 store-front/.DS_Store
 .next/
 node_modules/
+.env
 	
