@@ -1,18 +1,25 @@
 /* eslint-disable react/jsx-no-target-blank */
 import React from "react";
 import Link from "next/link";
-import Head from 'next/head';
-import Image from 'next/image';
+import Container from '@mui/material/Container';
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
+import Footer from '../src/components/footer/footer';
+import Header from '../src/components/header/header';
 
 const HomePage = () => (
-      <div className="px-8 mt-10">
-        <Head>
-         <title>Bitclass</title>
-        </Head>    
-        <div className="mx-auto">
-         <Image src={'/img/pattern_nextjs.png'} alt={"Picture of the author"} width={1080} height={810}/>
-        </div>
-      </div>
+        <Container maxWidth="xl">
+          <Header />
+        <Box sx={{ my: 4 }}>
+          <Typography variant="h4" component="h1" gutterBottom>
+             NEXT 10 
+          </Typography>
+          <Link href="/about">
+            LINK 
+          </Link>
+          <Footer />
+        </Box>
+      </Container>
 );
 
 export default HomePage;
