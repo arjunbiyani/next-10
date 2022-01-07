@@ -7,7 +7,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 
 export default function Header() {
   return (
-    <Box sx={{ flexGrow: 1 }}>
+   
       <AppBar position="static">
         <Toolbar variant="dense">
           <IconButton edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
@@ -18,6 +18,6 @@ export default function Header() {
           </Typography>
         </Toolbar>
       </AppBar>
-    </Box>
+   
   );
 }

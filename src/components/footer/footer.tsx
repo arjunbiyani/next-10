@@ -5,6 +5,7 @@ import FolderIcon from '@mui/icons-material/Folder';
 import RestoreIcon from '@mui/icons-material/Restore';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import Box from '@mui/material/Box';
 
 export default function Footer() {
   const [value, setValue] = React.useState('recents');
@@ -13,7 +14,7 @@ export default function Footer() {
   };
 
   return (
-
+    <Box sx={{ flexGrow: 1 }}>
       <BottomNavigation  value={value} onChange={handleChange}>
         <BottomNavigationAction
           label="Recents"
@@ -32,5 +33,6 @@ export default function Footer() {
         />
         <BottomNavigationAction label="Folder" value="folder" icon={<FolderIcon />} />
       </BottomNavigation>
+      </Box>
     );
 }
